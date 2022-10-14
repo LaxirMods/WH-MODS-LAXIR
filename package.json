@@ -1,7 +1,7 @@
 {
-    "name": "wh-mods-dev",
+    "name": "wh-mods-laxir",
     "version": "3.1.0",
-    "description": "WhatsApp BOT By wahid",
+    "description": "WhatsApp BOT By Drixx",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -45,16 +45,16 @@
         "google-it",
         "baileys-md"
     ],
-    "homepage": "https://github.com/WH-MODS-BOT/fix-bot-v1",
+    "homepage": "https://github.com/LaxirMods/WH-MODS-LAXIR",
     "author": {
-        "name": "WH-MODS-BOT"
+        "name": "WH-MODS-LAXIR"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/WH-MODS-BOT/fix-bot-v1"
+        "url": "https://github.com/LaxirMods/WH-MODS-LAXIR"
     },
     "bugs": {
-        "url": "https://github.com/WH-MODS-BOT/fix-bot-v1/"
+        "url": https://github.com/LaxirMods/WH-MODS-LAXIR/"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
