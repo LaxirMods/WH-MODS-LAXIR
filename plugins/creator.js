@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@LaxirMods 
-LaxirMods
-/
-WH-MOD-LAXIR
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-WH-MOD-LAXIR/plugins/creator.js /
-@LaxirMods
-LaxirMods Update creator.js
-Latest commit 250ac75 2 hours ago
- History
- 2 contributors
-@Mr4xDrizasri@LaxirMods
-109 lines (97 sloc)  3.64 KB
-
 let { MessageType } = (await import('@adiwajshing/baileys')).default
 
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
@@ -39,6 +9,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
   let teksnomor = `${htki} *OWNER* ${htka}
 ✦ @${nomorown.split`@`[0]} ✦
 ------- ${nameown} -------
+
 📮 *Note:*
 • Owner tidak menerima save contact
 • Owner berhak blockir tanpa alasan
@@ -49,17 +20,18 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *💌 Nama* : Laxir-Mods
+${htjava} *💌 Nama* : Laxir Mods
 ${htjava} *✉️ Nama RL* : HAMBA ALLAH
 ${htjava} *♂️ Gender* : Boys
 ${htjava} *🕋 Agama* : Islam
 ${htjava} *⏰ Tanggal lahir* : Private 🥶
 ${htjava} *🎨 Umur* : 18
 ${htjava} *🧮 Kelas* : SUDAH TAMAT
-${htjava} *🧩 Hobby* : Mencoba Hal Baru & Silat
+${htjava} *🧩 Hobby* : Silat"
 ${htjava} *💬 Sifat* : ASIK DAH KALAU DAH KENAL
-${htjava} *🗺️ Tinggal* : Indonesia, Samarinda, Kalimantan Timur
+${htjava} *🗺️ Tinggal* : Samarinda, Kalimantan Timur
 ${htjava} *❤️ Waifu* : -
+
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
 •·––––––––––––––––––––––––––·•
@@ -135,18 +107,3 @@ handler.tags = ['main', 'info']
 handler.command = /^(owner|creator)/i
 
 export default handler
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-WH-MOD-LAXIR/creator.js at main · LaxirMods/WH-MOD-LAXIR
