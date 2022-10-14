@@ -3,6 +3,15 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
 let name = await conn.getName(who)
+const { MessageType } = require('@adiwajshing/baileys')
+
+const PhoneNumber = require('awesome-phonenumber')
+
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+
+  await conn.sendMessage(m.chat, {
+
+contacts: [{
 
 
 if (command == 'whmods1') {
@@ -22,8 +31,14 @@ if (command =='whmods3')
   }, {
    "displayName": "👑 Developer Bot",
       "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:Bg Drixx\nitem1.TEL;waid=6285332039348:6285332039348\nitem1.X-ABLabel:📍 Creator\nitem2.EMAIL;type=INTERNET:laxirmods@gmail.com\nitem2.X-ABLabel:💌 Email\nitem3.URL:https://youtube.com/channel/UC4KkbFZ15ILdDhLJeytnFDw\nitem3.X-ABLabel:📮 Rest Api\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:ac\nitem4.X-ABLabel:🌍 Region | Indonesia\nitem5.X-ABLabel:───────[ DevicBT ]───────\nEND:VCARD"
-  }, {  
+
+  }, { 
+   }, {
+
     }]
+    , MessageType.contactsArray, { quoted: m })
+
+}
     await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: fakes })
 let caption = `👋 Hai *${name} @${who.split("@")[0]}*, itu nomor ownerku, jangan dispam  kak😊`
 }
