@@ -25,7 +25,7 @@ if (command == 'whmods2') {
 await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: fakes })
 }
 if (command =='whmods3'){
-  contacts: [{
+
  "displayName": "Owner DevicBT"
       let vcard ='BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:Owner DevicBT\nitem1.TEL;waid=6285752271870:6285752271870\nitem1.X-ABLabel:📍 Creator\nitem2.EMAIL;type=INTERNET:Nothing\nitem2.X-ABLabel:💌 Email\nitem3.URL:https://github.com/LaxirMods\nitem3.X-ABLabel:📮 Rest Api\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:ac\nitem4.X-ABLabel:🌍 Region | Indonesia\nitem5.X-ABLabel:───────[ DevicBT ]───────\nEND:VCARD'
   }, {
@@ -35,7 +35,7 @@ if (command =='whmods3'){
 
 
 
-    }]
+
 
 
 
