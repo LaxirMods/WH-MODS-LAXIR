@@ -2,20 +2,29 @@ import fetch from 'node-fetch'
 let handler = async(m, { conn, text, usedPrefix, command }) => {
 let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
 
-let str = `*https://youtube.com/channel/UCTVeRHM0v0Hqv_-O8yVkFpw*`
-let wibu = `https://hadi-api.herokuapp.com/api/loli` 
+let str = `*https://youtube.com/channel/UC4KkbFZ15ILdDhLJeytnFDw*
+
+Pengen mentahan nya ?
+Nih ada santai bro....
+https://github.com/ImYanXiao/Elaina-MultiDevice
+
+Pengen yang udah di recode oleh owner?
+wa.me/6285332039348`
+let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
 let thumb = await(await fetch(wibu)).buffer()
-conn.sendButtonDoc(m.chat, str, wm,'ᴏᴋ','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/inizenscuy",
-    title: 'Albedo-MultiDevice',
-    body: 'want source code?',
+conn.sendButtonDoc(m.chat, str, wm,'Thankyou','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://Instagram.com/drizasri",
+    mediaType: "VIDEO",
+    description: "https://www.instagram.com/drizasri", 
+    title: 'Laxir-Mods',
+    body: wm,
     thumbnail: thumb,
-    sourceUrl: sig
+    sourceUrl: sgc
   }
   } }) 
           }
-handler.help = ['sc', 'script']
-handler.tags = ['info', 'main']
+handler.help = ['source code']
+handler.tags = ['info']
 handler.command =  /^(script|sc)$/i
 
 export default handler
