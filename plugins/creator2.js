@@ -26,19 +26,19 @@ await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard
 }
 if (command =='whmods3'){
   contacts: [{
- "displayName": "Owner DevicBT",
+ "displayName": "Owner DevicBT"
       let vcard ='BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:Owner DevicBT\nitem1.TEL;waid=6285752271870:6285752271870\nitem1.X-ABLabel:📍 Creator\nitem2.EMAIL;type=INTERNET:Nothing\nitem2.X-ABLabel:💌 Email\nitem3.URL:https://github.com/LaxirMods\nitem3.X-ABLabel:📮 Rest Api\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:ac\nitem4.X-ABLabel:🌍 Region | Indonesia\nitem5.X-ABLabel:───────[ DevicBT ]───────\nEND:VCARD'
   }, {
    "displayName": "👑 Developer Bot"
       let vcard ='BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:Bg Drixx\nitem1.TEL;waid=6285332039348:6285332039348\nitem1.X-ABLabel:📍 Creator\nitem2.EMAIL;type=INTERNET:laxirmods@gmail.com\nitem2.X-ABLabel:💌 Email\nitem3.URL:https://youtube.com/channel/UC4KkbFZ15ILdDhLJeytnFDw\nitem3.X-ABLabel:📮 Rest Api\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:ac\nitem4.X-ABLabel:🌍 Region | Indonesia\nitem5.X-ABLabel:───────[ DevicBT ]───────\nEND:VCARD'
+  }, {
 
-  }, { 
-   }, {
+
 
     }]
-    , MessageType.contactsArray, { quoted: m })
 
-}
+
+
 
     await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: fakes })
 let caption = `👋 Hai *${name} @${who.split("@")[0]}*, itu nomor ownerku, jangan dispam  kak😊`
